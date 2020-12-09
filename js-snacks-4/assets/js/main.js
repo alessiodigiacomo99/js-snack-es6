@@ -3,7 +3,7 @@ const listaNomi = ["Piero", "Gianni", "Luca", "Giorgio", "Franco"];
 const nome = prompt("Come ti chiami?");
 const nomeCapitalized = nome.charAt(0).toUpperCase() + nome.slice(1);
 let bool = false;
-for(i = 0; i < listaNomi.length; i++){
+for(let i = 0; i < listaNomi.length; i++){
     if(nomeCapitalized == listaNomi[i]){
         bool = true;
     }

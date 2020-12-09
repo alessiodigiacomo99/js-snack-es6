@@ -3,8 +3,13 @@
 
 const numero = (prompt("inserisci numero di 4 cifre"));
 let somma = 0
-for(let i = 0; i < 4; i++){
-    let numeriSingoli = Number(numero.charAt(i));
-    somma += numeriSingoli; 
+
+if (numero > 9999 || numero < 1000){
+    console.log("di quattro cifre...");
+}else{
+    for(let i = 0; i < 4; i++){
+        let numeriSingoli = Number(numero.charAt(i));
+        somma += numeriSingoli; 
+    }
+    console.log(somma);
 }
-console.log(somma);

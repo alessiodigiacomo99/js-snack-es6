@@ -1,6 +1,5 @@
 /* Crea due array che hanno un numero di elementi diversi.
 Aggiungi elementi casuali all’array che ha meno elementi,
-
 fino a quando ne avrà tanti quanti l’altro. */
 
 const arrayUno = ["franco", "piero", "paolo", "gianni", "marco", "luca", "giovanni"];
@@ -14,6 +13,8 @@ for (let i = 0; i < differenza; i++){
         arrayUno.push(arrayDue[indiceCasualeDue]);
     }else if (arrayUno.length > arrayDue.length){
         arrayDue.push(arrayUno[indiceCasualeUno]);
+    }else{
+        console.log("Hanno la stessa lunghezza");
     }
 
 }
